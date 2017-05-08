@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.EditProfileController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-5.0" prefHeight="500.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="90.0" layoutY="22.0" prefHeight="34.0" prefWidth="92.0" text="Edit Profile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTextField" layoutX="30.0" layoutY="106.0" prefHeight="25.0" prefWidth="106.0" />
+            <TextField fx:id="lastNameTextField" layoutX="165.0" layoutY="106.0" prefHeight="25.0" prefWidth="106.0" />
+            <TextField fx:id="userNameTextField" layoutX="27.0" layoutY="162.0" prefHeight="25.0" prefWidth="106.0" />
+            <TextField fx:id="emailTextField" layoutX="26.0" layoutY="225.0" prefHeight="25.0" prefWidth="188.0" />
+            <TextField fx:id="addressTextField" layoutX="26.0" layoutY="289.0" prefHeight="25.0" prefWidth="188.0" />
+            <TextField fx:id="phoneTextField" layoutX="26.0" layoutY="345.0" prefHeight="25.0" prefWidth="188.0" />
+            <PasswordField fx:id="passwordTextField" layoutX="164.0" layoutY="162.0" prefHeight="25.0" prefWidth="106.0" />
+            <Label layoutX="30.0" layoutY="78.0" text="First name" />
+            <Label layoutX="165.0" layoutY="78.0" text="Last name" />
+            <Label layoutX="29.0" layoutY="137.0" text="User name" />
+            <Label layoutX="167.0" layoutY="137.0" text="Password" />
+            <Label layoutX="30.0" layoutY="206.0" text="E-mail" />
+            <Label layoutX="26.0" layoutY="264.0" text="Address" />
+            <Label layoutX="26.0" layoutY="328.0" text="Phone number" />
+            <Button layoutX="192.0" layoutY="415.0" mnemonicParsing="false" onAction="#updateProfile" text="Update" />
+            <Label fx:id="warningLabel" layoutX="26.0" layoutY="389.0" prefHeight="17.0" prefWidth="136.0" text="*Please fill all the fields" textFill="#d31e1e" visible="false" />
+            <Button layoutX="43.0" layoutY="415.0" mnemonicParsing="false" onAction="#back" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

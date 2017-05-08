@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.ReportController">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="-7.0" prefHeight="550.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="275.0" layoutY="51.0" prefHeight="17.0" prefWidth="159.0" text="Report">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="topCustomerTable" layoutX="83.0" layoutY="116.0" prefHeight="122.0" prefWidth="434.0">
+              <columns>
+                <TableColumn prefWidth="110.0" text="ID" />
+                <TableColumn prefWidth="108.0" text="First name" />
+                  <TableColumn minWidth="7.0" prefWidth="106.0" text="Last name" />
+                  <TableColumn minWidth="0.0" prefWidth="110.0" text="Total cache" />
+              </columns>
+            </TableView>
+            <Button layoutX="83.0" layoutY="489.0" mnemonicParsing="false" onAction="#switchToCartScene" prefHeight="25.0" prefWidth="63.0" text="Back" />
+            <Label layoutX="90.0" layoutY="85.0" prefHeight="17.0" prefWidth="113.0" text="Top Customers" />
+            <TableView fx:id="topBooksTable" layoutX="83.0" layoutY="293.0" prefHeight="167.0" prefWidth="434.0">
+              <columns>
+                <TableColumn prefWidth="114.0" text="ISBN" />
+                <TableColumn prefWidth="112.0" text="Title" />
+                  <TableColumn prefWidth="83.0" text="Publisher" />
+                  <TableColumn prefWidth="124.0" text="Sold copies" />
+              </columns>
+            </TableView>
+            <Label layoutX="90.0" layoutY="258.0" prefHeight="17.0" prefWidth="82.0" text="Top Books" />
+            <Label layoutX="286.0" layoutY="493.0" text="Prices" />
+            <TextField fx:id="priceTextField" editable="false" layoutX="368.0" layoutY="489.0" />
+            <Label fx:id="warningLabel" layoutX="152.0" layoutY="514.0" prefHeight="17.0" prefWidth="165.0" textFill="#e84b4b" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
